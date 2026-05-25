@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathMerge - App Page</title>
+  <style>
+    :root {
+      --bg: #f4f7f1;
+      --surface: #ffffff;
+      --text: #1f2a24;
+      --muted: #4f6559;
+      --accent: #2f7a4f;
+      --accent-strong: #215d3b;
+      --border: #d9e3db;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background: linear-gradient(150deg, #eef4ee 0%, #f8fbf7 50%, #eaf2eb 100%);
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    a.nav-link {
+      text-decoration: none;
+      color: var(--accent-strong);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      padding: 8px 12px;
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    a.nav-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(26, 45, 32, 0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin-bottom: 0.3em;
+      font-size: 1.1rem;
+      margin-top: 1.2em;
+    }
+
+    p, li {
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .site-footer {
+      margin-top: 22px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .site-footer a {
+      color: var(--accent-strong);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <nav aria-label="Main navigation">
+      <a class="nav-link" href="../index.html">Home</a>
+      <a class="nav-link" href="../TaskReminder/task-reminder.html">Task Reminder</a>
+      <a class="nav-link" href="math-merge.html">MathMerge</a>
+    </nav>
+
+    <section class="panel">
+      <h1>MathMerge</h1>
+      <p class="muted">Planned educational game - concept phase.</p>
+
+      <h2>Idea</h2>
+      <p>
+        MathMerge is planned as an educational merge game. You play a classic merge-style
+        loop, and instead of watching ads to continue or unlock benefits, you solve short
+        math tasks.
+      </p>
+
+      <h2>Learning Focus</h2>
+      <p>
+        The first focus is helping kids learn and practice multiplication
+        tables in a playful and motivating way.
+      </p>
+
+      <h2>How Progress Works</h2>
+      <p>
+        Progress and rewards are tied to learning: solving tasks unlocks the next steps.
+        This keeps the game fair, useful, and free from ad-based pressure.
+      </p>
+
+      <h2>Principles for This App</h2>
+      <ul>
+        <li>No pay-to-win progression.</li>
+        <li>No ad-gating that forces users to watch ads to continue.</li>
+        <li>Learning-first progression with meaningful math practice.</li>
+        <li>Minimal data transfer and local-first logic where possible.</li>
+      </ul>
+
+      <h2>Status</h2>
+      <p>
+        This page is an early placeholder and will evolve as the app concept gets refined.
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <a href="../impressum.html">Impressum</a> | <a href="../datenschutzerklaerung.html">Datenschutz</a>
+    </footer>
+  </main>
+</body>
+</html>
